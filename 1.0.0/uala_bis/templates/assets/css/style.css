@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    word-break:keep-all
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+#header {
+    margin: 0 0 50px 0;
+}
+
+#header .sectionImage {
+    margin: 0 0 25px 0;
+    max-width: 200px;
+}
+
+#header .separator {
+    background-color: var(--secondary-color);
+    height: 1px;
+    width: 100%;
+}
+
+#steps .step {
+    background-color: var(--primary-color-light);
+    border-radius: 15px;
+    margin: 0 0 50px 0;
+    padding: 25px;
+}
+
+#steps .step:nth-child(even) {
+    background-color: var(--secondary-color-light);
+}
+
+#steps .step .stepHead {
+    align-items: center;
+    display: flex;
+}
+
+#steps .step .stepNumber {
+    align-items: center;
+    background-color: white;
+    border-radius: 7px;
+    color: var(--primary-color);
+    display: flex;
+    font-size: 0.8em;
+    font-weight: bold;
+    height: 40px;
+    justify-content: center;
+    margin: 0 12px 0 0;
+    width: 40px;
+}
+
+#steps .step:nth-child(even) .stepNumber {
+    color: var(--secondary-color);
+}
+
+#steps .step .stepTitle {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 0 0 0 0;
+}
+
+#steps .step .stepText {
+    color: #666666;
+    font-size: 0.9em;
+    margin: 10px 0 0 0;
+}
+
+#steps .step .stepCta {
+    margin: 25px 0 0 0;
+}
+
+#steps .step .stepCta a {
+    background-color: var(--primary-color);
+    border-radius: 7px;
+    color: white;
+    display: block;
+    font-size: 0.8em;
+    font-weight: normal;
+    padding: 14px 25px;
+    text-decoration: none;
+    width: fit-content;
+}
+
+#steps .step:nth-child(even) .stepCta a {
+    background-color: #ff6765;
+}
+
+@media screen and (min-width: 1000px) {
+    #steps .step {
+        
+        width: 100%;
+    } 
+}
